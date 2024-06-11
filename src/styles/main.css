@@ -1,0 +1,391 @@
+@media (min-width: 1200px) {
+  img {
+    width: 1000px;
+  }
+}
+
+a, button {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.skip-to-main-content-link {
+  position: absolute;
+  text-decoration: none;
+  top: -60px;
+  left: 0;
+  padding: 8px;
+  background-color: #bf1722;
+  color: white;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skip-to-main-content-link:focus {
+  top: 0;
+  opacity: 1; /* Menampilkan link ketika difokuskan */
+}
+
+.skip-to-main-content-link.show {
+  opacity: 1;
+}
+.sedan-regular {
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sedan-regular-italic {
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero-image {
+  width: 100%;
+  height: 70vh; /* Setengah tinggi layar */
+  overflow: hidden;
+}
+
+html, body {
+  font-family: "Sedan", serif;
+  background-color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 2cm;
+  padding-bottom: 2cm;
+}
+@media screen and (max-width: 768px) {
+
+  .skip-to-main-content-link {
+    top: 71px;
+    left: 10px; /* Atur kembali posisi left */
+  }
+
+  
+  #drawer-checkbox:checked + nav.sidebar {
+    left: 0;
+  }
+
+
+  ul {
+    flex-direction: column; /* Mengubah tata letak menu menjadi vertikal saat layar kecil */
+    align-items: center; /* Posisikan menu di tengah saat layar kecil */
+  }
+
+  li {
+    margin: 0.5rem 0; /* Atur margin atas dan bawah antara setiap item menu saat layar kecil */
+  }
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#restaurant-list.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 3rem auto;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+}
+
+.card-img-container {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.card-place {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5em;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  font-size: 0.75rem;
+}
+
+.card-rating {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5em;
+  font-size: 0.75rem;
+}
+
+.card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-content-title {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card-content-description {
+  color: #666;
+}
+
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.user__image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user__info > small {
+  color: #666;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-links li a:hover {
+  color: #aaa;
+}
+
+.nav-bar{
+  height: 70px;
+  background: #262626;
+}
+
+.brand{
+  float: left;
+  position: absolute;
+  padding-left: 20px;
+  min-height: 44px;
+  min-width: 44px;
+  line-height: 70px;
+  font-size: 1.5em;
+}
+
+.brand a{
+  text-decoration: none;
+  color: white;
+  padding: 20px 44px 24px 0px;
+}
+
+.nav-container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav{
+  float: right;
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav ul li{
+  float: left;
+  position: relative;
+}
+
+nav ul li a{
+  display: block;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 20px;
+  line-height: 70px;
+  background: #262626;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li a:hover{
+  background: gray;
+  color: #fff;
+}
+
+nav ul li a:not(:only-child):after{
+  content: '▼';
+  padding-left: 5px;
+}
+
+nav ul li ul li {
+  min-width: 190px;
+}
+
+nav ul li ul li a{
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown{
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+
+.nav-mobile{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 70px;
+  width: 70px;
+}
+
+#nav-toggle{
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 20px 44px 24px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span::before,
+#nav-toggle span::after{
+  position: absolute;
+  display: block;
+  content: '';
+  background: #fff;
+  height: 5px;
+  width: 35px;
+  transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span::before{
+  top: -10px;
+}
+
+#nav-toggle span::after{
+  bottom: -10px;
+}
+
+#nav-toggle.active span{
+  background-color: transparent;
+}
+
+#nav-toggle.active span::before, #nav-toggle.active span::after{
+  top: 0;
+}
+
+#nav-toggle.active span::before{
+  transform: rotate(45deg);
+}
+
+#nav-toggle.active span::after{
+  transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 768px) {
+
+  .nav-mobile{
+      display: block;
+  }
+
+  nav{
+      width: 100%;
+      padding: 50px 0 15px;
+  }
+
+  nav ul{
+      display: none;
+  }
+
+  nav ul li {
+      float: none;
+  }
+
+  nav ul li a{
+      padding: 15px;
+      line-height: 20px;
+      padding-left: 25%;
+  }
+
+
+  nav ul li ul li a{
+      padding-left: 30%;
+  }
+
+  .nav-dropdown{
+      position: static;
+  }
+}
+
+@media screen and (min-width: 799px){
+  .nav-list{
+      display: block !important;
+  }
+}
